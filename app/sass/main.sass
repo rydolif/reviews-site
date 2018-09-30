@@ -1,0 +1,356 @@
+@import "libs"
+@import "base"
+@import "page"
+
+
+.header
+	// position: fixed
+	// right: 0
+	// left: 0
+	background-color: #f2f5f8
+	padding: 15px 0
+	transition: all .3s
+	z-index: 1001
+
+
+	&-menu
+		background-color: rgba(0, 0, 0, .8)
+		padding: 5px 0
+
+	&__container
+		position: relative
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+	.center-block
+		margin-left: 20%
+		display: flex
+		flex-direction: row
+		padding-right: 50px
+		border-right: 1px solid #cccccc
+		form
+			input
+				margin-right: 25px
+				width: 215px
+				background: #fff url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center
+				border: none
+				padding: 9px 10px 9px 50px
+				-webkit-border-radius: 10em
+				-moz-border-radius: 10em
+				border-radius: 10em
+				-webkit-transition: all .5s
+				-moz-transition: all .5s
+				transition: all .5s
+				height: 40px
+				box-shadow: 0 0 20px rgba(#000, .2)
+	.right-block
+		a
+			text-transform: uppercase
+			
+			color: #012f6e		
+			border-radius: 50px
+			padding: 10px 25px	
+			transition: all .3s
+			&:nth-child(2)
+				border: 1px solid #012f6e
+				&:hover
+					background-color: #012f6e
+					color: #fff
+
+
+.nav
+	ul
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+
+	li
+		margin-right: 55px
+		&:last-child
+			margin-right: 0
+
+.hero
+	background: url("../img/hero-bg.jpg") no-repeat center top / cover				
+	padding-top: 140px
+	padding-bottom: 140px
+	text-align: center
+	.top-btn
+		background-color: #fff
+		color: #011f49
+		padding: 0 43px
+		font-weight: 700
+	
+
+.best-company
+	padding-top: 80px
+	padding-bottom: 80px
+	background-color: #f1f4f9
+	h2
+		font-size: 36px
+		color: #011f49
+		font-weight: 300
+		position: relative
+		margin-bottom: 45px
+		&:before
+			position: absolute
+			content: ''
+			left: 0
+			bottom: 0
+			width: 100px
+			height: 3px
+			background-color: #011f40 
+	.wrapp-left
+		border: 1px solid #dddfe0
+		background-color: #fff
+		border-radius: 10px	
+		height: 222px	
+		display: flex
+		flex-direction: row
+		align-items: center
+		margin-bottom: 26px
+		.left
+			height: 220px
+			width: 29%
+			display: flex
+			justify-content: center
+			align-items: center
+			border-right: 1px solid #dddfe0
+			img
+				height: 40px
+		.center
+			display: flex
+			justify-content: center
+			align-items: flex-start
+			flex-direction: column
+			text-align: left
+			width: 31%
+			margin-left: 5%
+			span
+				color: #011f49
+				font-size: 30px
+				font-weight: 400
+			p
+				color: #666
+				font-weight: 300
+				font-size: 16px	
+				margin-bottom: 30px
+			.about-company
+				background-color: #f2f5f8
+				color: #666
+				border: 1px solid #666	
+				padding: 0 30px
+				&:hover
+					color: #012f6e
+					border: 1px solid #012f6e
+		.right
+			display: flex
+			flex-direction: column
+			
+			p
+				color: #666
+				font-size: 16px
+				text-align: right
+			.star
+				align-items: flex-end
+				justify-content: flex-end
+				display: flex
+				flex-direction: row
+				margin-bottom: 62px
+				img
+					height: 15px
+					width: 15px
+			.blue-btn
+				padding: 0 50px 0 65px
+
+	.wrap-right
+		border: 1px solid #dddfe0
+		background-color: #fff
+		border-radius: 10px	
+		.top-line
+			background-color: #e1eafa
+			border-bottom: 1px solid #dddfe0
+			padding: 40px 60px 12px 30px
+			h3
+				color: #011f49
+				font-size: 24px
+				font-weight: 300
+
+		.testimonial
+			padding: 20px
+			cursor: pointer
+			background-color: #fafafa	
+			&:nth-child(3)
+				background-color: #e1eafa	
+			&:hover
+				box-shadow: 0 0 20px rgba(#000, .2)	
+			.top-block
+				display: flex
+				flex-direction: row
+				justify-content: center
+				padding-top: 20px
+				margin-bottom: 30px
+
+				img
+					margin-right: 10px
+					height: 40px
+					width: 40px
+				.right-block
+					display: flex
+					flex-direction: column
+					span
+						color: #62656a
+						margin-bottom: 5px
+						display: block
+						font-size: 14px
+						font-weight: 400
+					p
+						font-size: 12px
+						font-weight: 400
+						color: #62656a
+					strong
+						color: #012f6e
+						font-size: 16px
+						font-weight: 400
+						text-transform: uppercase	
+			.right
+				display: flex
+				flex-direction: row
+				justify-content: center
+				margin-bottom: 10px
+				p
+					color: #192d49
+					font-size: 12px
+					font-weight: 300
+				.star
+					margin-left: 5px
+					display: flex
+					flex-direction: row
+					img
+						height: 15px
+						width: 15px
+			.about
+				padding-bottom: 20px
+				.wrap
+					display: flex
+					flex-direction: row
+					img
+						height: 17px
+						width: 17px
+						margin-right: 5px
+						margin-top: 2px
+					p
+						color: #999
+						font-size: 12px
+						font-weight: 100
+				.btn-wrapp
+					text-align: right	
+					margin-bottom: 10px	
+					a
+						text-align: right
+						text-transform: uppercase
+						font-size: 12px	
+						color: #62656a
+						&:hover
+							color: #192d49		
+				time
+					color: #192d49
+					font-size: 12px
+			.load-more
+				padding-top: 20px
+				border-top: 1px solid #dee0e0
+				text-align: center
+				.more-btn
+					background-color: #f2f5f8
+					color: #666
+					border: 1px solid #666
+					padding: 0 45px
+	.load-more-left
+		height: 50px
+		line-height: 50px
+		display: block
+		margin: 0 auto	
+		border-radius: 10px			
+		background-color: #ffffff
+		border-top: 1px solid #dee0e0
+		color: #0247a7
+		text-transform: uppercase
+		&:hover
+			color: #fff
+			background-color: #0247a7
+
+.footer
+	padding-top: 40px
+	padding-bottom: 35px
+	background-color: #011633
+	&__container
+		position: relative
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: flex-start
+	&__logo
+		img
+			margin-bottom: 25px
+		.copyright
+			p
+				color: #b2b2b2
+				font-size: 12px
+				font-weight: 100	
+	.center-block
+		margin-top: 15px
+		strong
+			color: #ccc
+			font-size: 16px
+			font-weight: 700
+			margin-bottom: 12px
+			display: block
+		p
+			color: #ccc
+			font-size: 17px
+			display: flex
+			align-items: center
+			i
+				color: #024aaf
+				margin-right: 10px	
+	.right-block
+		margin-top: 15px
+		strong
+			color: #ccc
+			font-size: 16px
+			font-weight: 700
+
+		p
+			color: #ccc
+			font-size: 14px
+			display: flex
+			align-items: center	
+			margin-bottom: 11px
+	.social-footer
+		display: flex
+		flex-direction: row
+		
+
+		a
+				
+			text-align: center
+			border: 1px solid #999999
+			color: #999999
+			border-radius: 50%
+			margin-right: 15px
+			height: 30px
+			width: 30px
+			&:hover
+				color: #024aaf
+				border: 1px solid #024aaf
+				i
+					color: #024aaf
+		i
+			margin-top: 6px	
+			&:hover
+				color: #024aaf									
+
+
+
+
+@import "media" // Always at the end
