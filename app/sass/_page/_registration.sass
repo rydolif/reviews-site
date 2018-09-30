@@ -1,0 +1,51 @@
+.registration-page
+
+	h2
+		position: relative
+		font-size: 30px
+		line-height: 2.3
+		text-align: center
+		margin: 0 auto
+		color: #031933
+		&:before
+			position: absolute
+			content: ''
+			left: 50%
+			transform: translate(-50%, 0)
+			bottom: 0
+			width: 100px
+			height: 3px
+			background-color: #012f6e
+
+	.btn
+		padding: 0 50px
+
+	.hero
+		padding-top: 125px
+		color: #fff
+		font-size: 24px
+		background-image: url(../img/registration-hero.jpg)
+
+	.reviews-page__form_block
+		&:last-child
+			width: 100%
+
+
+	&__row
+		display: flex
+		align-items: center
+
+		label.img
+			font-size: 16px
+			color: #0256cc
+			padding-left: 60px
+
+			span
+				font-size: 12px
+				color: #b2b2b2
+
+		.reviews-page__form_line
+			width: 46%
+			margin-right: 8%
+			&:last-child
+				margin-right: 0

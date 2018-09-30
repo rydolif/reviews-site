@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Добавление компании</title>
+	<title>ТКС банк</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -51,88 +51,125 @@
 		</div>
 	</header>
 
-	<main class="main registration-page">
+	<main class="main reviews-page">
 
-
-		<section class="hero">
+		<section class="hero second-hero">
 			<div class="container">
+				<div class="wrapp">
+					<div class="town">
+						<img src="img/map-check.png" alt="">
+						<p>Москва</p>
+						
+					</div>
 
-				<h1>Добавление компании</h1>
-				<p class="hero__sub-title">Хотите сами управлять информацией о компании и реагировать на отзывы  сотрудников? <br>Зарегистрируйтесь прямо сейчас.</p>
+					<div class="links">
+						<img src="img/link-check.png" alt="">
+						
+						<a href="#">www.tinkoff.ru</a>
 
+						
+					</div>
+				</div>
+				<h1>ТКС БАНК</h1>
+				<p class="hero__sub-title">Оставить отзыв о компании</p>
+
+
+				<div class="stars-line">
+					<p>4.9</p>
+					<div class="star">
+						<img src="img/yelow-star.png" alt="">
+						<img src="img/yelow-star.png" alt="">
+						<img src="img/yelow-star.png" alt="">
+						<img src="img/yelow-star.png" alt="">
+						<img src="img/yelow-star.png" alt="">
+					</div>
+					<p>15 отзывов</p>
+				</div>
+			
 
 			</div>
 		</section>
+
 
 		<form class="reviews-page__form">
 			<div class="container">
 				<div class="reviews-page__form_container">
 
 					<div class="reviews-page__form_block">
-
 						<div class="reviews-page__form_block--top">
-							<h2>Регистрация Компании</h2>
+							<h2>Информация о пользователе</h2>
 						</div>
-
 						<div class="reviews-page__form_block--center">
 
-							<div class="registration-page__row">
-								<div class="reviews-page__form_line">
-									<label for="company">Ваша Компания*</label>
-									<input id="company" type="text" name="company" placeholder="начните вводить название компании" required>
-								</div>
-								<div class="reviews-page__form_line">
-									<label for="" class="img">
-										<img src="img/registration-img.jpg" alt="">
-										Загрузить логотип Компании
-										<br><span>(допустимые форматы - JPG, GIF, PNG, PSD )</span>
-									</label>
-								</div>
-							</div>
-
-							<div class="registration-page__row">
-								<div class="reviews-page__form_line">
-									<label for="site">Сайт Компании</label>
-									<input id="site" type="text" name="site" placeholder="введите ссылку на сайт" required>
-								</div>
-
-								<div class="reviews-page__form_line">
-									<label for="office">Адрес головного офиса Компании</label>
-									<input id="office" type="text" name="office" placeholder="введите адрес" required>
-								</div>
+							<div class="reviews-page__form_line">
+								<label for="name">Имя Пользователя</label>
+								<input id="name" type="text" name="name" placeholder="Введите имя" required>
 							</div>
 
 							<div class="reviews-page__form_line">
-								<label for="">Укажите отрицательные стороны</label>
-								<textarea placeholder="Опишите  компанию ( минимум 100 символов)" cols="30" rows="4"></textarea>
+								<label for="" class="img">
+									<img src="img/icon-man.jpg" alt="">
+									Загрузить изображение профиля <br><span>(не обязательно)</span>
+								</label>
 							</div>
 
-							<div class="registration-page__row">
-								<div class="reviews-page__form_line">
-									<label for="pass">Два плюс два?</label>
-									<input id="pass" type="text" name="pass" placeholder="введите ответ на вопрос" required>
+							<div class="reviews-page__form_line">
+								<label for="position">Должность</label>
+								<input id="position" type="text" name="position" placeholder="введите должность" required>
+							</div>
+
+							<div class="reviews-page__form_line">
+								<label for="pass">Два плюс два?</label>
+								<input id="pass" type="text" name="pass" placeholder="введите ответ на вопрос" required>
+							</div>
+						</div>
+					</div>
+
+					<div class="reviews-page__form_block">
+						<div class="reviews-page__form_block--top">
+							<span>Выставьте рейтинг:</span>
+							<div class="stars-line">
+								<div class="star">
+									<img src="img/yelow-star.png" alt="">
+									<img src="img/yelow-star.png" alt="">
+									<img src="img/yelow-star.png" alt="">
+									<img src="img/yelow-star.png" alt="">
+									<img src="img/yelow-star.png" alt="">
 								</div>
-								<div class="reviews-page__form_line">
-									<input type="checkbox" class="checkbox" id="calculation__checkbox">
-									<label  for="calculation__checkbox" class="label label__active">
-										Принимаю условия политики конфиденциальности
-									</label>
-								</div>
+							</div>
+						</div>
+
+						<div class="reviews-page__form_block--center">
+							<div class="reviews-page__form_line">
+								<label for="">Укажите положительные стороны</label>
+								<textarea placeholder="Опишите пололжительные стороны компании ( минимум 40 символов)" cols="30" rows="4"></textarea>
+							</div>
+							
+							<div class="reviews-page__form_line">
+								<label for="">Укажите отрицательные стороны</label>
+								<textarea placeholder="Опишите пололжительные стороны компании ( минимум 40 символов)" cols="30" rows="4"></textarea>
+							</div>
+
+							<div class="reviews-page__form_line">
+								<input type="checkbox" class="checkbox" id="calculation__checkbox">
+								<label  for="calculation__checkbox" class="label label__active">
+									Принимаю условия политики конфиденциальности
+								</label>
 							</div>
 
 						</div>
+
 					</div>
 					
 				</div>
 
-				<div class="reviews-page__form_btn">
-					<button class="btn form_btn">+ добавить компанию</button>
+				<div class="reviews-page__form_btn ">
+					<button class="btn form_btn">+ оставить отзыв о компании</button>
 				</div>
 
 				
 			</div>
 		</form>
-
 
 
 	</main>
@@ -148,8 +185,7 @@
 						<p>Использование сервиса производится в соответствии<br> с нашими <a href="#"> Правилами использования</a> и  <a href="#"> Политикой конфиденциальности.</a><br>Site © 2013–2018.</p>
 					</div>
 				</div>
-
-			
+		
 
 				<div class="center-block">
 					<strong>Служба поддержки</strong>

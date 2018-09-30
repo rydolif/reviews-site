@@ -1,6 +1,22 @@
 $(function() {
 
 
+//--------------------form-----------------------------
+  $('.checkbox').on('change', function() {
+      var btn = $('.form__btn');
+      if ( btn.attr('disabled') ){
+        btn.removeAttr("disabled");
+        $('.label').addClass('label__active');
+      }
+      else{
+        btn.attr("disabled", true);
+        $('.label').removeClass('label__active');
+      }
+  });
+
+
+
+
 //------------------------------гамбургер-----------------------------
   $('.hamburger').click(function() {
     $(this).toggleClass('hamburger-active');
