@@ -1,17 +1,245 @@
 
 @media only screen and (max-width : 1200px)
+	.header .center-block
+		margin-left: 0
 
-	.header
+	.best-company .wrapp-left .right .blue-btn
+		padding: 0 15px
+
+	.best-company .wrapp-left .center .about-company
+		padding: 0 15px
+
+
+
+	.best-company .wrapp-left
+		justify-content: space-between
+		padding-right: 20px
+
+
+	.card-window
+		.content
+			padding: 30px
+
+		.map
+			max-width: 350px
+
+	.thanks-window
+		padding-bottom: 60px
 
 
 @media only screen and (max-width : 992px)
-	#thanks
-		padding: 40px
+	.reviews-page__form
+		&_container
+			flex-direction: column
+			margin-bottom: 0
 
-	.modal
-		width: 320px
-		padding: 40px
+		&_block
+			width: 100%
+			margin-right: 0
+			margin-bottom: 30px
+			&:last-child
+				width: 100%
 
+	.reviews-page .hero__sub-title
+		font-size: 18px
+
+	.reviews-page__form_block--center
+		padding: 25px
+
+	.reviews-page__form_block--top
+		padding: 20px 30px 0
+
+	.reviews-page__form_block--top span
+		margin-bottom: 10px
+
+	.registration-page
+		
+		&__row
+			flex-direction: column
+
+
+	.registration-page__row .reviews-page__form_line
+		width: 100%
+		margin-right: 0
+
+
+
+	.thanks-window
+		br
+			display: none
+		&__wrap
+			padding: 20px
+
+	.card-window
+		&__wrap
+			display: flex
+			flex-direction: column
+
+		.content
+			width: 100%
+
+		.map
+			max-width: 100%
+
+	.best-company .line
+		padding-right: 0
+
+	.card-testimonial
+		.left-block
+			padding: 15px
+
+		.top-line
+			flex-direction: column
+
+		.stars-line
+			p
+				text-align: left
+		.btn
+			margin-bottom: 15px
+
+	.footer
+		&__container
+			flex-direction: column
+			align-items: center
+			text-align: center
+
+		.social-footer
+			display: flex
+			justify-content: center
+
+		.center-block
+			display: flex
+			flex-direction: column
+			align-items: center
+
+	.best-company .wrap-right .testimonial .top-block .right-block p
+		br
+			display: none
+
+	.header
+		.right-block a
+			padding: 10px
+		.center-block
+			padding-right: 15px
+			form input
+				width: 180px
+				padding-left: 35px
+				margin-right: 15px
+
+	.best-company .load-more-left
+		margin-bottom: 30px
+
+@media only screen and (max-width : 767px)
+	h1
+		font-size: 40px
+		line-height: 1.2
+
+	.hero
+		padding: 80px 0
+		&__sub-title
+			font-size: 18px
+
+	.reviews-page__form
+		padding: 40px 0
+
+		h2
+			font-size: 24px
+			line-height: 1.4
+	
+		&_block--top
+			padding-top: 20px
+
+	.thanks-window
+		h2
+			font-size: 36px
+
+		strong
+			font-size: 24px
+
+	.second-hero strong
+		margin-bottom: 80px
+		font-size: 22px
+
+	.best-company
+		padding: 40px 0
+
+		h2
+			font-size: 30px
+
+		.wrapp-left
+			flex-direction: column
+			height: auto
+			padding: 0
+			padding: 30px 0
+			text-align: center
+
+			.left
+				height: auto
+				border-right: 0
+				margin-bottom: 15px
+
+			.right
+				p
+					text-align: center
+				.star
+					margin-bottom: 20px
+					justify-content: center
+			.center
+				margin-left: 0
+				align-items: center
+				width: auto
+				span
+					font-size: 22px
+
+				p
+					margin-bottom: 10px
+	
+	.card-testimonial
+		padding-bottom: 40px
+
+		h2
+			font-size: 30px
+
+		.left-block
+			display: flex
+
+			.top-line
+				margin-right: 30px
+				margin-bottom: 0
+		.dislike-btn
+			width: 100%
+			padding: 0
+
+		.right-block
+			padding: 35px
+
+	.card-window
+		.content__line
+			flex-direction: column
+			text-align: center
+			div
+				margin-bottom: 15px
+			&_top
+				align-items: center
+
+		.map
+			height: 300px
+
+	
+	.header
+		.right-block
+			display: none
+
+		.center-block
+			padding-right: 70px
+			border: none
+
+			form input
+				margin-right: 0
+
+		.btn
+			display: none
+	
 	.nav
 		position: fixed
 		display: block
@@ -19,48 +247,23 @@
 		height: 100%
 		flex-direction: column
 		right: -100%
-		top: 80px
+		top: 60px
 		z-index: -1
-		background: rgba(0, 0, 0, .9)
+		background: #f2f5f8
 		transition: all .3s
+		z-index: 100
+		padding: 60px
 
-		ul
-			display: flex
-			flex-direction: column
-			justify-content: center
-			margin-top: 40px
-			margin-left: 40px
-
-		li
-			margin: 0
-			margin-bottom: 10px
-
-		a
-			color: #fff
+		.right-block
 			display: block
-			&::before
-				content: ''
-				width: 0
-				transform: scale(0)
-				transition: all .3s
-				position: absolute
-				bottom: 0
-				width: 80%
-				height: 1px
-				background-color: $accent
-				z-index: -1
 
-			&:hover
-				color: $accent
-				text-decoration: none
-				&::before
-					transform: scale(1)
+		.btn
+			display: block
+			margin-bottom: 30px
 
-			&:focus
-				color: $accent
-				text-decoration: none
-				&::before
-					transform: scale(1)
+		&-active
+			right: 0
+			
 
 	.hamburger
 		display: block
@@ -71,15 +274,52 @@
 		right: 0
 
 
-
-@media only screen and (max-width : 767px)
-	.header
-
 @media only screen and (max-width : 576px)
-	.header
+	h1
+		font-size: 30px
+		
+	.best-company h2
+		font-size: 22px
+
+	.card-testimonial h2
+		font-size: 22px
+
+	.three-hero strong
+		font-size: 20px
+		line-height: 1.4
+		br
+			display: none
+
 
 @media only screen and (max-width : 480px)
-	.header
+	
+	.reviews-page__form_block--top
+		flex-direction: column
+		span
+			margin-bottom: 5px
+
+		.stars-line
+			margin-bottom: 5px
+
+	.reviews-page__form_block--center
+		padding: 25px
+
+	.reviews-page__form input
+		padding: 0 25px
+
+	.header .center-block form input
+		width: 150px
+
+	.card-window .btn
+		padding: 0 10px
+		font-size: 9px
+
+	.thanks-window h2
+		font-size: 34px
+
+		strong
+			font-size: 28px
+			line-height: 1.3
 
 
 

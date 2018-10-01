@@ -77,14 +77,16 @@ $(function() {
   }
 
 //----------------------------------------fixed----------------------------------
-  $(window).scroll(function(){
-      if($(this).scrollTop()>20){
-          $('.header').addClass('header-active');
-      }
-      else if ($(this).scrollTop()<20){
-          $('.header').removeClass('header-active');
-      }
-  });
+  // $(window).scroll(function(){
+  //     if($(this).scrollTop()>1){
+  //         $('.header').addClass('header-menu');
+  //         $('.main').addClass('main-active');
+  //     }
+  //     else if ($(this).scrollTop()<1){
+  //         $('.header').removeClass('header-menu');
+  //         $('.main').removeClass('main-active');
+  //     }
+  // });
 
 //-------------------------скорость якоря---------------------------------------
   $(".header__list").on("click","a", function (event) {

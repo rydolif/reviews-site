@@ -1,10 +1,10 @@
 @import "libs"
 @import "base"
-@import "page"
 
+.main
+	&-active
+		padding-top: 70px
 
-
-			
 .header
 	background-color: #f2f5f8
 	padding: 15px 0
@@ -13,8 +13,14 @@
 
 
 	&-menu
-		background-color: rgba(0, 0, 0, .8)
-		padding: 5px 0
+		padding: 10px 0
+
+	&-active
+		position: fixed
+		right: 0
+		left: 0
+		transition: all .3s
+
 
 	&__container
 		position: relative
@@ -59,15 +65,8 @@
 
 
 .nav
-	ul
-		display: flex
-		flex-direction: row
-		justify-content: space-between
-
-	li
-		margin-right: 55px
-		&:last-child
-			margin-right: 0
+	display: none
+	
 
 .hero
 	background: url("../img/hero-bg.jpg") no-repeat center top / cover				
@@ -85,12 +84,13 @@
 	padding-top: 80px
 	padding-bottom: 80px
 	background-color: #f1f4f9
+
 	h2
 		font-size: 36px
 		color: #011f49
 		font-weight: 300
 		position: relative
-		margin-bottom: 45px
+		margin-bottom: 10px
 		&:before
 			position: absolute
 			content: ''
@@ -98,8 +98,9 @@
 			bottom: 0
 			width: 100px
 			height: 3px
-			background-color: #011f40
-			
+			background-color: #012f6e
+
+
 	.wrapp-left
 		border: 1px solid #dddfe0
 		background-color: #fff
@@ -110,12 +111,35 @@
 		align-items: center
 		margin-bottom: 26px
 		.left
+			position: relative
 			height: 220px
 			width: 29%
 			display: flex
 			justify-content: center
 			align-items: center
 			border-right: 1px solid #dddfe0
+			&::before
+				content: ''
+				position: absolute
+				right: -20px
+				top: 50%
+				transform: translate(0, -50%)
+				margin-left: -2px
+				border-bottom: 10px solid transparent
+				border-left: 10px solid #e1e3e3
+				border-right: 10px solid transparent
+				border-top: 10px solid transparent
+			&::after
+				content: ''
+				position: absolute
+				right: -18px
+				top: 50%
+				transform: translate(0, -50%)
+				margin-left: -2px
+				border-bottom: 10px solid transparent
+				border-left: 10px solid #fff
+				border-right: 10px solid transparent
+				border-top: 10px solid transparent
 			img
 				height: 40px
 		.center
@@ -166,7 +190,8 @@
 	.wrap-right
 		border: 1px solid #dddfe0
 		background-color: #fff
-		border-radius: 10px	
+		border-radius: 10px
+		overflow: hidden
 		.top-line
 			background-color: #e1eafa
 			border-bottom: 1px solid #dddfe0
@@ -179,17 +204,19 @@
 		.testimonial
 			padding: 20px
 			cursor: pointer
-			background-color: #fafafa	
-			&:nth-child(3)
-				background-color: #e1eafa	
+			background-color: #fafafa
+			transition: all .3s
+			border-bottom: 1px solid rgba(#000, .2)
 			&:hover
-				box-shadow: 0 0 20px rgba(#000, .2)	
+				box-shadow: 0 0 20px rgba(#000, .2)
+				background-color: #e1eafa
+				border-bottom: 1px solid rgba(#000, .0)
+
 			.top-block
 				display: flex
 				flex-direction: row
 				justify-content: center
-				padding-top: 20px
-				margin-bottom: 30px
+				margin-bottom: 10px
 
 				img
 					margin-right: 10px
@@ -216,7 +243,6 @@
 			.right
 				display: flex
 				flex-direction: row
-				justify-content: center
 				margin-bottom: 10px
 				p
 					color: #192d49
@@ -230,7 +256,6 @@
 						height: 15px
 						width: 15px
 			.about
-				padding-bottom: 20px
 				.wrap
 					display: flex
 					flex-direction: row
@@ -252,7 +277,11 @@
 						font-size: 12px	
 						color: #62656a
 						&:hover
-							color: #192d49		
+							color: #192d49
+							text-decoration: underline
+						&:focus
+							color: #192d49
+							text-decoration: underline
 				time
 					color: #192d49
 					font-size: 12px
@@ -279,16 +308,41 @@
 			color: #fff
 			background-color: #0247a7
 
+
+.line
+	font-size: 14px
+	line-height: 18px
+	text-align: right
+	margin-bottom: 20px
+	padding-right: 27%
+	color: #666
+
+	img
+		margin-left: 5px
+
+	a
+		color: #012f6e
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+		&:focus
+			text-decoration: none
+
 .footer
 	padding-top: 40px
 	padding-bottom: 35px
 	background-color: #011633
+
+	a, i
+		transition: all .3s
+
 	&__container
 		position: relative
 		display: flex
 		flex-direction: row
 		justify-content: space-between
 		align-items: flex-start
+
 	&__logo
 		img
 			margin-bottom: 25px
@@ -305,14 +359,17 @@
 			font-weight: 700
 			margin-bottom: 12px
 			display: block
-		p
+		a
 			color: #ccc
 			font-size: 17px
 			display: flex
 			align-items: center
-			i
+			&:hover
 				color: #024aaf
-				margin-right: 10px	
+		i
+			color: #024aaf
+			margin-right: 10px
+
 	.right-block
 		margin-top: 15px
 		strong
@@ -326,6 +383,7 @@
 			display: flex
 			align-items: center	
 			margin-bottom: 11px
+
 	.social-footer
 		display: flex
 		flex-direction: row
@@ -352,5 +410,5 @@
 
 
 
-
+@import "page"
 @import "media" // Always at the end
